@@ -1,0 +1,382 @@
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    text-align: center;   
+    width: 1250px;margin: auto;
+}
+
+.header {
+    height: 70px;
+    width: 1250px;
+    text-align: center;  
+}
+
+
+.tempat{
+    margin-top: 50px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.type{
+    text-align: center;
+}
+
+.container-cari{
+    top: 10px;
+    position: absolute;
+    right: 20px;
+}
+
+.container-cari input[type="text"] {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    width: 80px;    
+    transition: ease-in-out 0.35s;
+}
+
+.container-cari input[type="text"]:focus {
+    width: 250px;
+}
+
+.container-cari button {
+    padding: 5px 12px;
+    border-radius: 5px;
+    background-color: #000000;
+    color: #888888;
+    border: groove #888888;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.container-cari button:hover{
+    color: #ffffff;
+    border: groove #ffffff;
+    transition: 0.4s;
+}
+
+.ul-atas{
+    margin: auto;
+    margin-top: 15px;
+    display: table;
+}   
+
+.menu-item{
+    position: relative;
+    display: inline-block;
+    top: -10px;
+}
+
+.menu-item:hover .submenu{
+    display: block;
+    cursor: pointer;
+}
+
+.menu{
+    padding: 10px;
+    margin-right: 200px;
+    transition: ease-in-out 0.7s;
+    cursor: pointer;
+    display: table-cell;
+    text-decoration: none;
+}
+
+#menu{
+    background-color: #000000;
+    border: none;
+    color: #ffffff  ;
+}
+
+.menu:after{
+    background: none repeat scroll 0 0 transparent;
+    bottom: 10px;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.menu:hover:after{
+    width: 100%;
+    left: 0;
+}
+
+.submenu{
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 150px;
+    text-align: left;
+    padding: 10px;
+    padding-top: 5px;
+}
+
+.listsubmenu{
+    display: block;
+    margin-bottom: 10px;
+}
+
+li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.listsubmenu:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: red;
+}
+
+
+.bar-atas {
+    top: 0px; 
+    width: 1250px;
+    background-color: #000000;
+    height: 40px;   
+    display: flex; 
+}
+
+.bar-bawah {
+    position: fixed; 
+    width: 100%; 
+    height: 60px;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+}
+
+.icons{
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.judul-icons{
+    margin-top: -15px;
+    font-size: 12px;
+}
+
+.container-login{
+    height: 22px;
+    background-color: #111111;
+    padding: 5px;
+    text-align: right;
+    margin-top: 10px;
+    border-bottom: groove #010101;
+}
+
+.login{
+    background-color: #000000;
+    color: #888888;
+    border: groove #888888;
+    border-radius: 20px;
+    width: 55px;
+    height: 25px;
+    font-size: 10px;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.login:hover{
+    color: #ffffff;
+    border: groove #ffffff;
+    transition: 0.4s;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+}
+
+.bungkus-komik {    
+    padding-bottom: 60px;
+    margin-left: 3%;
+    text-align: left;
+    width: 800px;
+}
+
+.container-komik {
+    display: inline-flex;
+    cursor: pointer;
+    overflow-x: scroll;
+    width: 800px;
+    scrollbar-width: none;
+}
+
+.komik {
+    height: auto;
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    display: flex;  
+    flex-direction: column;
+}
+
+.judul-komik{
+    padding: 5px;
+    margin-top: 5px;
+    font-size: 8px;
+    color: #ffffff;
+}
+
+.judul-komik:hover{
+    text-decoration-line: underline;
+    color: red;
+}
+
+.gambar-komik{
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+}
+
+.gambar{
+    width: 120px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5%;
+    transition: transform 0.3s ease-in-out;
+    z-index: -1;
+}
+
+.gambar-komik:hover{
+    transition: transform 0.17s ease-in-out;
+    transform: scale(1.13);
+    border-radius: 10%;
+}
+
+.manhwa{
+    width: 50px;
+    height: 15px;
+    font-size: 9px;
+    background-color: #0355ad;
+    position: absolute;
+    color: #ffffff;
+    border-radius: 10%;
+    right: 7px;
+    line-height: 15px;
+}
+
+.manhua{
+    width: 50px;
+    height: 15px;
+    font-size: 9px;
+    background-color: #e1c404;
+    position: absolute;
+    color: #ffffff;
+    border-radius: 10%;
+    right: 7px;
+    line-height: 15px;
+}
+
+.manga{
+    width: 50px;
+    height: 15px;
+    font-size: 9px;
+    background-color: #01c86e;
+    position: absolute;
+    color: #ffffff;
+    border-radius: 10%;
+    right: 7px;
+    line-height: 15px;
+}
+
+.favorit{
+    width: 320px;
+    margin-left: 30px;
+    padding: 10px;
+}
+
+.favorit h2{
+    text-align: center;
+}
+
+.baris{
+    width: 320px;
+    height: 100px;
+    border-bottom: ridge;
+    border-color: #333333;
+    display: flex;
+}
+
+.kolom{
+    width: 40px;
+    height: 70px;
+}
+
+.kolom p{
+    width: 20px;
+    height: 20px;
+    border-style: ridge;
+    border-color: #333333;
+    color: #888;
+    margin: auto;
+    margin-top: 32px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.kolom p:hover{
+    border-color: red;
+    color: red;
+    cursor: pointer;
+}
+
+.kolom img{
+    width: 50px;
+    height: 70px;
+    margin-top: 15px;
+    border-radius: 10%;
+    transition: transform 0.17s ease-in-out;
+}
+
+.kolom img:hover{
+    transition: transform 0.17s ease-in-out;
+    transform: scale(1.13);
+    cursor: pointer;
+    border-radius: 10%;
+}
+
+.kolomp{
+    width: 180px;
+    height: 70px;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.kolomp p:hover{
+    color: red;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.gambar-icons:hover{
+    opacity: 0.5;
+}
+
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer{
+    width: 1250px;
+    height: 90px;
+    text-align: center;
+    background-color: #333333;
+}
+
+footer h2{
+    line-height: 40px;
+    font-size: 15px;
+}
+
